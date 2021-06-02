@@ -1,6 +1,6 @@
 {
-  "name": "tinymce",
-  "version": "1.0.0",
+  "name": "svelte-tinymce",
+  "version": "1.0.1",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
