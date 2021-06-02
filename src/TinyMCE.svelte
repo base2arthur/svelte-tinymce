@@ -89,7 +89,7 @@ export let propertiesReady=false
         tinymce.init({
             selector: "#" + id, 
 
-            content_css: "/css/tinymce/content.css",
+            content_css: "/tinymce/content.css",
             height: 300,
             plugins:
                 "print preview paste  searchreplace autolink code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable  charmap quickbars ",
