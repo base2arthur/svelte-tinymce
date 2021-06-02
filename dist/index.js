@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('tinymce/skins'), require('tinymce/skins/oxide/skin'), require('tinymce/plugins/insertfile/plugin'), require('tinymce/plugins/undo/plugin'), require('tinymce/plugins/redo/plugin'), require('tinymce/plugins/styleselect/plugin'), require('tinymce/plugins/bold/plugin'), require('tinymce/plugins/italic/plugin'), require('tinymce/plugins/alignleft/plugin'), require('tinymce/plugins/aligncenter/plugin'), require('tinymce/plugins/alignright/plugin'), require('tinymce/plugins/alignjustify/plugin'), require('tinymce/plugins/bullist/plugin'), require('tinymce/plugins/numlist/plugin'), require('tinymce/plugins/outdent/plugin'), require('tinymce/plugins/indent/plugin')) :
-    typeof define === 'function' && define.amd ? define(['tinymce/skins', 'tinymce/skins/oxide/skin', 'tinymce/plugins/insertfile/plugin', 'tinymce/plugins/undo/plugin', 'tinymce/plugins/redo/plugin', 'tinymce/plugins/styleselect/plugin', 'tinymce/plugins/bold/plugin', 'tinymce/plugins/italic/plugin', 'tinymce/plugins/alignleft/plugin', 'tinymce/plugins/aligncenter/plugin', 'tinymce/plugins/alignright/plugin', 'tinymce/plugins/alignjustify/plugin', 'tinymce/plugins/bullist/plugin', 'tinymce/plugins/numlist/plugin', 'tinymce/plugins/outdent/plugin', 'tinymce/plugins/indent/plugin'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.Tinymce = factory());
-}(this, (function () { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('tinymce/skins'), require('tinymce/skins/oxide/skin'), require('tinymce/plugins/insertfile/plugin'), require('tinymce/plugins/undo/plugin'), require('tinymce/plugins/redo/plugin'), require('tinymce/plugins/styleselect/plugin'), require('tinymce/plugins/bold/plugin'), require('tinymce/plugins/italic/plugin'), require('tinymce/plugins/alignleft/plugin'), require('tinymce/plugins/aligncenter/plugin'), require('tinymce/plugins/alignright/plugin'), require('tinymce/plugins/alignjustify/plugin'), require('tinymce/plugins/bullist/plugin'), require('tinymce/plugins/numlist/plugin'), require('tinymce/plugins/outdent/plugin'), require('tinymce/plugins/indent/plugin')) :
+    typeof define === 'function' && define.amd ? define(['exports', 'tinymce/skins', 'tinymce/skins/oxide/skin', 'tinymce/plugins/insertfile/plugin', 'tinymce/plugins/undo/plugin', 'tinymce/plugins/redo/plugin', 'tinymce/plugins/styleselect/plugin', 'tinymce/plugins/bold/plugin', 'tinymce/plugins/italic/plugin', 'tinymce/plugins/alignleft/plugin', 'tinymce/plugins/aligncenter/plugin', 'tinymce/plugins/alignright/plugin', 'tinymce/plugins/alignjustify/plugin', 'tinymce/plugins/bullist/plugin', 'tinymce/plugins/numlist/plugin', 'tinymce/plugins/outdent/plugin', 'tinymce/plugins/indent/plugin'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.Tinymce = {}));
+}(this, (function (exports) { 'use strict';
 
     function noop() { }
     function run(fn) {
@@ -95355,6 +95355,8 @@
     	}
     }
 
-    return TinyMCE;
+    exports.TinyMCE = TinyMCE;
+
+    Object.defineProperty(exports, '__esModule', { value: true });
 
 })));

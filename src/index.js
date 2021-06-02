@@ -1,1 +1,1 @@
-export { default as default } from './TinyMCE.svelte';
+export { default as TinyMCE } from './TinyMCE.svelte';

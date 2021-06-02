@@ -95366,4 +95366,4 @@ class TinyMCE extends SvelteComponent {
 	}
 }
 
-export default TinyMCE;
+export { TinyMCE };
